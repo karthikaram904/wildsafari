@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Safari Settings Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Dashboard CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- Toggle Button (Mobile / Tab) -->
+<button class="sidebar-toggle" onclick="toggleSidebar()">
+  <i class="fa fa-bars"></i>
+</button>
+
+<div class="dashboard-container">
+
+  <!-- Sidebar -->
+  <aside class="dashboard-sidebar" id="sidebar">
+    <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/wildsafari-logo-white.png" alt="Icon">
+        </a>
+
+    <ul class="sidebar-menu">
+  <li>
+    <a href="dashboard.html">
+      <i class="fa fa-chart-line"></i> Dashboard
+    </a>
+  </li>
+
+  <li>
+    <a href="bookings.html">
+      <i class="fa fa-suitcase"></i> Bookings
+    </a>
+  </li>
+
+  <li>
+    <a href="sightings.html">
+      <i class="fa fa-paw"></i> Sightings
+    </a>
+  </li>
+
+  <li>
+    <a href="guides.html">
+      <i class="fa fa-user"></i> Guides
+    </a>
+  </li>
+
+  <li class="active">
+    <a href="settings.html">
+      <i class="fa fa-gear"></i> Settings
+    </a>
+  </li>
+
+  <li>
+    <a href="logout.html">
+      <i class="fa fa-right-from-bracket"></i> Logout
+    </a>
+  </li>
+</ul>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+
+   
+
+  <div class="profile-wrapper">
+
+    <!-- Profile Header Card -->
+    <div class="profile-card">
+      <div class="profile-avatar">
+        <img src="img/user1.jpg" alt="User">
+        <button class="change-photo-btn">Change Photo</button>
+      </div>
+
+      <div class="profile-info">
+        <h2>Meenakshi Explorer</h2>
+        <p>Wildlife Photographer & Safari Enthusiast</p>
+        <span class="profile-badge">Premium Member</span>
+      </div>
+    </div>
+
+    <!-- Profile Form Section -->
+    <div class="profile-form-section">
+      <h3>Edit Profile</h3>
+
+      <form class="profile-form">
+
+        <div class="input-row">
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name">
+          </div>
+
+          <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email">
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter phone number">
+          </div>
+
+          <div class="input-group">
+            <label>Location</label>
+            <input type="text" placeholder="Enter location">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label>About Me</label>
+          <textarea rows="4" placeholder="Write something about you..."></textarea>
+        </div>
+
+        <div class="profile-actions">
+          <button type="submit" class="save-btn">Save Changes</button>
+          <button type="reset" class="cancel-btn">Cancel</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+</main>
+
+  
+</div>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

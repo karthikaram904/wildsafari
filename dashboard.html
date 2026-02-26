@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Safari Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Dashboard CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- Toggle Button (Mobile / Tab) -->
+<button class="sidebar-toggle" onclick="toggleSidebar()">
+  <i class="fa fa-bars"></i>
+</button>
+
+<div class="dashboard-container">
+
+  <!-- Sidebar -->
+  <aside class="dashboard-sidebar" id="sidebar">
+    <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/wildsafari-logo-white.png" alt="Icon">
+        </a>
+
+    <ul class="sidebar-menu">
+  <li class="active">
+    <a href="dashboard.html">
+      <i class="fa fa-chart-line"></i> Dashboard
+    </a>
+  </li>
+
+  <li>
+    <a href="bookings.html">
+      <i class="fa fa-suitcase"></i> Bookings
+    </a>
+  </li>
+
+  <li>
+    <a href="sightings.html">
+      <i class="fa fa-paw"></i> Sightings
+    </a>
+  </li>
+
+  <li>
+    <a href="guides.html">
+      <i class="fa fa-user"></i> Guides
+    </a>
+  </li>
+
+  <li>
+    <a href="settings.html">
+      <i class="fa fa-gear"></i> Settings
+    </a>
+  </li>
+
+  <li>
+    <a href="logout.html">
+      <i class="fa fa-right-from-bracket"></i> Logout
+    </a>
+  </li>
+</ul>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+
+    <!-- Stats -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <h4>Total Bookings</h4>
+        <p>128</p>
+      </div>
+      <div class="stat-card">
+        <h4>Wildlife Sightings</h4>
+        <p>342</p>
+      </div>
+      <div class="stat-card">
+        <h4>Active Guides</h4>
+        <p>12</p>
+      </div>
+    </section>
+
+    <!-- Bookings -->
+    <section class="dashboard-section">
+      <h3>Recent Tour Bookings</h3>
+
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <th>Guest</th>
+            <th>Package</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Rahul</td>
+            <td>Explorer Safari</td>
+            <td>12 Mar</td>
+            <td class="confirmed">Confirmed</td>
+          </tr>
+          <tr>
+            <td>Anitha</td>
+            <td>Jungle Trail</td>
+            <td>15 Mar</td>
+            <td class="pending">Pending</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Sightings -->
+    <section class="dashboard-section">
+      <h3>Wildlife Sightings</h3>
+
+      <div class="sighting-grid">
+        <div class="sighting-card">
+          <h4>Tiger</h4>
+          <p>Zone A</p>
+          <span>Guide: Arun</span>
+        </div>
+        <div class="sighting-card">
+          <h4>Elephant Herd</h4>
+          <p>River Side</p>
+          <span>Guide: Ravi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guides -->
+    <section class="dashboard-section">
+      <h3>Safari Guides</h3>
+
+      <div class="guide-grid">
+        <div class="guide-card">
+          <img src="img/guide-1.jpg" alt="">
+          <h4>Arun Kumar</h4>
+          <p>Big Cat Expert</p>
+        </div>
+
+        <div class="guide-card">
+          <img src="img/guide-2.jpg" alt="">
+          <h4>Ravi</h4>
+          <p>Bird Specialist</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

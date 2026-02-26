@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <title>WildLife Safari</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+   <!-- Topbar Start -->
+     <div class="container-fluid bg-light p-0 wow fadeIn top-bar" data-wow-delay="0.1s">
+        <div class="row gx-0 d-lg-flex">
+            <div class="col-lg-7 col-md-12 px-5">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, New York, USA</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 px-5">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+   <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-xl bg-white navbar-light sticky-top py-xl-0 px-4 px-xl-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/wildsafari-logo.png" alt="Icon">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                 <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="index.html" class="dropdown-item">Home1</a>
+                        <a href="home2.html" class="dropdown-item">Home2</a>
+                        
+                    </div>
+                </div>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="package.html" class="nav-item nav-link active">Package</a>
+                <a href="animal.html" class="nav-item nav-link">Our Animals</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="dashboard.html" class="nav-item nav-link">Dashboard</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+    <button id="rtl-toggle" class="rtl-btn" aria-label="Toggle RTL">⇄</button>
+            <a href="login.html" class="btn btn-primary">Login<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-4 text-white mb-3 animated slideInDown">Package Details</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Package Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <section class="package-detail">
+    <div class="container">
+        <div class="row">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-8">
+
+                <!-- Hero Image -->
+                <div class="package-hero">
+                    <img src="img/animal-md-3.jpg" alt="Safari Package">
+                </div>
+
+                <!-- Title -->
+                <h1 class="package-title">Royal Wildlife Safari Experience</h1>
+
+                <!-- Meta -->
+                <div class="package-meta">
+                    <span><i class="fa fa-clock"></i> 2 Days / 1 Night</span>
+                    <span><i class="fa fa-map-marker-alt"></i> Forest Reserve</span>
+                    <span><i class="fa fa-users"></i> Max 6 Persons</span>
+                </div>
+
+                <!-- Description -->
+                <div class="package-box">
+                    <h3>Package Overview</h3>
+                    <p>
+                        Our Wildlife Safari Tour offers a perfect blend of adventure, nature, and comfort.
+Explore dense forests and open landscapes with experienced professional guides.
+Witness wildlife in their natural habitat during safe and well-planned safari drives.
+Enjoy peaceful surroundings that help you disconnect from city life.
+The package includes comfortable stays designed to blend with nature.
+Experience local culture, traditions, and authentic regional cuisine.
+Ideal for families, couples, photographers, and adventure enthusiasts.
+Every safari is conducted with strict safety and conservation standards.
+Capture unforgettable moments and create lifelong memories.
+This package promises a truly immersive and responsible wildlife experience.
+                    </p>
+                </div>
+
+                <!-- Highlights -->
+                <div class="package-box">
+                    <h3>Highlights</h3>
+                    <ul class="list">
+                        <li>Guided jungle safari</li>
+                        <li>Luxury forest stay</li>
+                        <li>Wildlife photography</li>
+                        <li>Campfire & cultural show</li>
+                        <li>Traditional food experience</li>
+                    </ul>
+                </div>
+
+                <!-- Itinerary -->
+                <div class="package-box">
+                    <h3>Itinerary</h3>
+
+                    <div class="itinerary-item">
+                        <h5>Day 1</h5>
+                        <p>Arrival, welcome drink, forest safari, evening campfire & dinner.</p>
+                    </div>
+
+                    <div class="itinerary-item">
+                        <h5>Day 2</h5>
+                        <p>Morning safari, breakfast, checkout with memories.</p>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="package-box">
+                    <h3>Gallery</h3>
+                    <div class="gallery">
+                        <img src="img/banner-1.jpg">
+                        <img src="img/banner-3.jpg">
+                        <img src="img/gallery7.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-4">
+
+                <!-- Booking Card -->
+                <div class="sidebar-card">
+                    <h3 class="price">₹12,500 <small>/ person</small></h3>
+
+                    <ul class="sidebar-list">
+                        <li><strong>Duration:</strong> 2 Days</li>
+                        <li><strong>Location:</strong> Forest Zone</li>
+                        <li><strong>Guide:</strong> Included</li>
+                        <li><strong>Meals:</strong> Breakfast & Dinner</li>
+                    </ul>
+
+                    <a href="#" class="btn-primary w-100">Book This Package</a>
+                </div>
+
+                <!-- Info Card -->
+                <div class="sidebar-card">
+                    <h4>Need Help?</h4>
+                    <p>Call our safari expert for instant booking support.</p>
+                    <p class="contact">📞 +91 98765 43210</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        
+
+   <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/wildsafari-logo.png" alt="Icon">
+        </a>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="404.html">404</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="package.html">Package</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Popular Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="maintenance.html">Maintenance</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter and be the first to know about exciting wildlife safari packages, seasonal offers, and special discounts.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-3 mb-md-0">
+                       Copyright ©2026 WildLife Safari. All rights reserved. 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

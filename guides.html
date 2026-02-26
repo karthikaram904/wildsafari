@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Safari Guides Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Dashboard CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- Toggle Button (Mobile / Tab) -->
+<button class="sidebar-toggle" onclick="toggleSidebar()">
+  <i class="fa fa-bars"></i>
+</button>
+
+<div class="dashboard-container">
+
+  <!-- Sidebar -->
+  <aside class="dashboard-sidebar" id="sidebar">
+    <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/wildsafari-logo-white.png" alt="Icon">
+        </a>
+
+    <ul class="sidebar-menu">
+  <li>
+    <a href="dashboard.html">
+      <i class="fa fa-chart-line"></i> Dashboard
+    </a>
+  </li>
+
+  <li>
+    <a href="bookings.html">
+      <i class="fa fa-suitcase"></i> Bookings
+    </a>
+  </li>
+
+  <li>
+    <a href="sightings.html">
+      <i class="fa fa-paw"></i> Sightings
+    </a>
+  </li>
+
+  <li  class="active">
+    <a href="guides.html">
+      <i class="fa fa-user"></i> Guides
+    </a>
+  </li>
+
+  <li>
+    <a href="settings.html">
+      <i class="fa fa-gear"></i> Settings
+    </a>
+  </li>
+
+  <li>
+    <a href="logout.html">
+      <i class="fa fa-right-from-bracket"></i> Logout
+    </a>
+  </li>
+</ul>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+
+    <h1>Our Expert Guides</h1>
+    <div class="guides-grid">
+        <div class="guides-card">
+            <img src="img/user1.jpg" alt="Guide 1">
+            <div class="content">
+                <h3>John Doe</h3>
+                <p>Experienced wildlife guide with 10+ years exploring forests and mountains. Expert in bird and animal tracking.</p>
+            </div>
+        </div>
+        <div class="guides-card">
+            <img src="img/user2.jpg" alt="Guide 2">
+            <div class="content">
+                <h3>Mary Smith</h3>
+                <p>Specializes in adventure trekking and survival skills. Passionate about educating beginners on safety and nature.</p>
+            </div>
+        </div>
+        <div class="guides-card">
+            <img src="img/user3.jpg" alt="Guide 3">
+            <div class="content">
+                <h3>David Lee</h3>
+                <p>Mountain climbing and river rafting expert. Guides groups safely through challenging terrains with a smile.</p>
+            </div>
+        </div>
+        <div class="guides-card">
+            <img src="img/guide-3.jpg" alt="Guide 4">
+            <div class="content">
+                <h3>Sara Khan</h3>
+                <p>Nature photography and camping specialist. Helps visitors capture the beauty of wilderness while exploring safely.</p>
+            </div>
+        </div>
+        <div class="guides-card">
+            <img src="img/guide-2.jpg" alt="Guide 5">
+            <div class="content">
+                <h3>Alex Brown</h3>
+                <p>Expert in water sports and adventure activities. Ensures fun experiences while maintaining strict safety protocols.</p>
+            </div>
+        </div>
+        <div class="guides-card">
+            <img src="img/guide-1.jpg" alt="Guide 6">
+            <div class="content">
+                <h3>Linda Green</h3>
+                <p>Eco-tourism and sustainability guide. Educates visitors about flora and fauna while promoting eco-friendly practices.</p>
+            </div>
+        </div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

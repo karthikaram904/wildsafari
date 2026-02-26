@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookings Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Dashboard CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- Toggle Button (Mobile / Tab) -->
+<button class="sidebar-toggle" onclick="toggleSidebar()">
+  <i class="fa fa-bars"></i>
+</button>
+
+<div class="dashboard-container">
+
+  <!-- Sidebar -->
+  <aside class="dashboard-sidebar" id="sidebar">
+    <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/wildsafari-logo-white.png" alt="Icon">
+        </a>
+
+    <ul class="sidebar-menu">
+  <li>
+    <a href="dashboard.html">
+      <i class="fa fa-chart-line"></i> Dashboard
+    </a>
+  </li>
+
+  <li class="active">
+    <a href="bookings.html">
+      <i class="fa fa-suitcase"></i> Bookings
+    </a>
+  </li>
+
+  <li>
+    <a href="sightings.html">
+      <i class="fa fa-paw"></i> Sightings
+    </a>
+  </li>
+
+  <li>
+    <a href="guides.html">
+      <i class="fa fa-user"></i> Guides
+    </a>
+  </li>
+
+  <li>
+    <a href="settings.html">
+      <i class="fa fa-gear"></i> Settings
+    </a>
+  </li>
+
+  <li>
+    <a href="logout.html">
+      <i class="fa fa-right-from-bracket"></i> Logout
+    </a>
+  </li>
+</ul>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+
+    <div class="dashboard-content bookings-page">
+  <div class="page-header bookings-header">
+    <h2>My Bookings</h2>
+    <p>Your safari tour package bookings</p>
+  </div>
+
+  <div class="booking-table-wrapper">
+    <table class="booking-table">
+      <thead>
+        <tr>
+          <th>Booking ID</th>
+          <th>Package</th>
+          <th>Date</th>
+          <th>Guests</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#BK101</td>
+          <td>Jungle Safari</td>
+          <td>12 Mar 2026</td>
+          <td>4</td>
+          <td><span class="status confirmed">Confirmed</span></td>
+          <td><a href="#" class="btn-view">View</a></td>
+        </tr>
+
+        <tr>
+          <td>#BK102</td>
+          <td>Night Safari</td>
+          <td>18 Mar 2026</td>
+          <td>2</td>
+          <td><span class="status pending">Pending</span></td>
+          <td><a href="#" class="btn-view">View</a></td>
+        </tr>
+
+        <tr>
+          <td>#BK103</td>
+          <td>Bird Watching</td>
+          <td>25 Mar 2026</td>
+          <td>3</td>
+          <td><span class="status cancelled">Cancelled</span></td>
+          <td><a href="#" class="btn-view">View</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+  </main>
+</div>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WildLife Safari</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+   <!-- Topbar Start -->
+     <div class="container-fluid bg-light p-0 wow fadeIn top-bar" data-wow-delay="0.1s">
+        <div class="row gx-0 d-lg-flex">
+            <div class="col-lg-7 col-md-12 px-5">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, New York, USA</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 px-5">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-xl bg-white navbar-light sticky-top py-xl-0 px-4 px-xl-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/wildsafari-logo.png" alt="Icon">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                 <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Home</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="index.html" class="dropdown-item">Home1</a>
+                        <a href="home2.html" class="dropdown-item active">Home2</a>
+                        
+                    </div>
+                </div>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="package.html" class="nav-item nav-link">Package</a>
+                <a href="animal.html" class="nav-item nav-link">Our Animals</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="dashboard.html" class="nav-item nav-link">Dashboard</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+    <button id="rtl-toggle" class="rtl-btn" aria-label="Toggle RTL">⇄</button>
+            <a href="login.html" class="btn btn-primary">Login<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+   <!-- Home2 Banner Start -->
+<section class="home2-banner">
+    
+    <!-- Carousel -->
+    <div class="owl-carousel home2-carousel">
+        <div class="banner-item">
+            <img src="img/banner-1.jpg" alt="">
+        </div>
+        <div class="banner-item">
+            <img src="img/banner-3.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="banner-overlay"></div>
+
+    <!-- Content -->
+    <!-- Content -->
+<div class="banner-content">
+    <div class="container">
+        <div class="content-box">
+            <span class="text-primary fw-bold text-uppercase">
+                Wildlife Safari Tour Operator
+            </span>
+
+            <h1 class="display-4 fw-bold my-4">
+                Discover The Wild <br class="d-none d-md-block">
+                In Its Purest Form
+            </h1>
+
+            <p class="mb-4">
+                Join our expertly guided wildlife safaris and experience
+                breathtaking encounters with nature.
+            </p>
+
+            <a href="#" class="btn btn-primary py-3 px-5">
+                Explore Safaris
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</section>
+
+
+<!-- Home2 Banner End -->
+
+    <!-- Video Section Start -->
+<section class="container-xxl py-5 video-sec">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+
+            <!-- Left Image -->
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="position-relative rounded-3 overflow-hidden">
+                    <img src="img/home2-sec.jpg"
+                         class="img-fluid w-100"
+                         alt="Wildlife Safari Video">
+
+                    <!-- Play Button -->
+                    <button type="button"
+                            class="btn btn-primary position-absolute top-50 start-50 translate-middle rounded-circle"
+                            style="width:70px;height:70px;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-src="https://www.youtube.com/embed/VIDEO_ID">
+                        <i class="fa fa-play text-white"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                <span class="text-primary fw-bold text-uppercase">
+                    Watch Our Story
+                </span>
+                <h1 class="display-6 mb-4">
+                    Experience the Wild <br>
+                    <span class="text-primary">Like Never Before</span>
+                </h1>
+
+                <p class="mb-4">
+                    Discover breathtaking wildlife moments through our expertly
+                    guided safari tours. From dense forests to open grasslands,
+                    every journey is crafted to deliver safe and unforgettable
+                    wildlife experiences.
+                </p>
+
+                <ul class="list-unstyled mb-4">
+                    <li class="mb-2">
+                        <i class="fa fa-check-circle text-primary me-2"></i>
+                        Professional Safari Guides
+                    </li>
+                    <li class="mb-2">
+                        <i class="fa fa-check-circle text-primary me-2"></i>
+                        Eco-Friendly Tourism Practices
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle text-primary me-2"></i>
+                        Wildlife Photography Tours
+                    </li>
+                </ul>
+
+                <a href="tours.html" class="btn btn-primary py-3 px-5">
+                    Explore Safari Tours
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Video Section End -->
+
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+   <!-- Home2 About Start -->
+<section class="home2-about py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+
+            <!-- Image Grid -->
+            <div class="col-lg-6">
+                <div class="about-img-grid">
+                    <img src="img/home2-about.jpg" class="img-fluid img-main" alt="Safari Experience">
+                    <img src="img/home2-about1.jpg" class="img-fluid img-overlay" alt="Wildlife Tour">
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="col-lg-6">
+                <span class="text-primary fw-bold text-uppercase">
+                    About Our Safaris
+                </span>
+
+                <h2 class="display-6 my-4">
+                    Crafting Authentic <br>
+                    <span class="text-primary">Wildlife Experiences</span>
+                </h2>
+
+                <p class="mb-4">
+                    We specialize in professionally guided wildlife safaris that connect
+                    travelers with nature in its purest form. Our journeys are designed
+                    to be safe, ethical, and unforgettable.
+                </p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-sm-6">
+                        <div class="about-feature">
+                            <i class="fa fa-binoculars text-primary"></i>
+                            <span>Expert Naturalist Guides</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="about-feature">
+                            <i class="fa fa-leaf text-primary"></i>
+                            <span>Eco-Friendly Tourism</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="about-feature">
+                            <i class="fa fa-shield-alt text-primary"></i>
+                            <span>Safety First Approach</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="about-feature">
+                            <i class="fa fa-camera text-primary"></i>
+                            <span>Photography Safaris</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="about.html" class="btn btn-primary px-5 py-3">
+                    Learn More About Us
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Home2 About End -->
+
+
+
+    <!-- Home2 Stats Start -->
+<section class="home2-stats py-5">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <span class="text-primary fw-bold text-uppercase">
+                Our Impact
+            </span>
+            <h2 class="display-6 mt-2">
+                Numbers That Speak
+            </h2>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card h-100">
+                    <div class="icon">
+                        <i class="fa fa-paw"></i>
+                    </div>
+                    <h3 data-toggle="counter-up">250</h3>
+                    <p>Wildlife Species</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card h-100">
+                    <div class="icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h3 data-toggle="counter-up">15K</h3>
+                    <p>Happy Travelers</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card h-100">
+                    <div class="icon">
+                        <i class="fa fa-map-marked-alt"></i>
+                    </div>
+                    <h3 data-toggle="counter-up">120</h3>
+                    <p>Safari Tours</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card h-100">
+                    <div class="icon">
+                        <i class="fa fa-leaf"></i>
+                    </div>
+                    <h3 data-toggle="counter-up">100</h3>
+                    <p>Eco Friendly</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Home2 Stats End -->
+
+
+
+   <!-- Services Home 2 Start -->
+<section class="services-home2 py-5">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-8">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">
+                    Premium Experiences at <span>Zoofari</span>
+                </h2>
+                <p class="section-desc">
+                    Nature, comfort and adventure – everything crafted for unforgettable wildlife moments.
+                </p>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="service-call">
+                    <i class="fa fa-phone-alt"></i>
+                    <div>
+                        <small>Call Us Anytime</small>
+                        <h5>+012 345 6789</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-parking"></i></div>
+                    <h5>Car Parking</h5>
+                    <p>Spacious and secure parking area for all visitors.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-camera"></i></div>
+                    <h5>Animal Photos</h5>
+                    <p>Capture unforgettable moments with wildlife.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-user-shield"></i></div>
+                    <h5>Expert Guides</h5>
+                    <p>Trained professionals ensuring safe exploration.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-utensils"></i></div>
+                    <h5>Food & Beverages</h5>
+                    <p>Hygienic food courts with multiple cuisines.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-shopping-bag"></i></div>
+                    <h5>Zoo Shopping</h5>
+                    <p>Souvenirs and eco-friendly products.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-wifi"></i></div>
+                    <h5>Free Wi-Fi</h5>
+                    <p>High-speed internet across the park.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-child"></i></div>
+                    <h5>Play Ground</h5>
+                    <p>Fun and safe play areas for kids.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa fa-bed"></i></div>
+                    <h5>Rest House</h5>
+                    <p>Relax and recharge in peaceful zones.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Services Home 2 End -->
+
+
+
+   <!-- Animals Home 2 Start -->
+<section class="animals-home2 py-5">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-7">
+                <span class="section-tag">Our Animals</span>
+                <h2 class="section-title">
+                    Meet the Wild Stars of <span>Zoofari</span>
+                </h2>
+                <p class="section-desc">
+                    Discover majestic creatures living freely in a natural and protected environment.
+                </p>
+            </div>
+            <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
+                <a href="#" class="btn btn-primary px-5 py-3 rounded-pill">
+                    Explore All Animals
+                </a>
+            </div>
+        </div>
+
+        <!-- Animal Grid -->
+        <div class="row g-4">
+
+            <!-- Item -->
+            <div class="col-lg-4 col-md-6">
+                <div class="animal-card">
+                    <img src="img/gallery1.jpg" alt="Elephant">
+                    <div class="animal-overlay">
+                        <span>Mammal</span>
+                        <h4>Elephant</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="animal-card">
+                    <img src="img/gallery2.jpg" alt="Lion">
+                    <div class="animal-overlay">
+                        <span>Mammal</span>
+                        <h4>Lion</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="animal-card">
+                    <img src="img/gallery3.jpg" alt="Tiger">
+                    <div class="animal-overlay">
+                        <span>Mammal</span>
+                        <h4>Tiger</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="animal-card">
+                    <img src="img/gallery4.jpg" alt="Zebra">
+                    <div class="animal-overlay">
+                        <span>Herbivore</span>
+                        <h4>Zebra</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="animal-card">
+                    <img src="img/gallery5.jpg" alt="Giraffe">
+                    <div class="animal-overlay">
+                        <span>Herbivore</span>
+                        <h4>Giraffe</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="animal-card">
+                    <img src="img/gallery6.jpg" alt="Panda">
+                    <div class="animal-overlay">
+                        <span>Rare Species</span>
+                        <h4>Panda</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Animals Home 2 End -->
+
+
+
+    <!-- Visiting Hours Start -->
+    <div class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <h1 class="display-6 text-white mb-5">Visiting Hours</h1>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span>Monday</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Tuesday</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Wednesday</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Thursday</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Friday</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Saturday</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Sunday</span>
+                            <span>Closed</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 text-white mb-5">Contact Info</h1>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Office</td>
+                                <td>123 Street, New York, USA</td>
+                            </tr>
+                            <tr>
+                                <td>Zoo</td>
+                                <td>123 Street, New York, USA</td>
+                            </tr>
+                            <tr>
+                                <td>Ticket</td>
+                                <td>
+                                    <p class="mb-2">+012 345 6789</p>
+                                    <p class="mb-0">ticket@example.com</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Support</td>
+                                <td>
+                                    <p class="mb-2">+012 345 6789</p>
+                                    <p class="mb-0">support@example.com</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Visiting Hours End -->
+
+
+   
+
+
+   <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/wildsafari-logo.png" alt="Icon">
+        </a>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="404.html">404</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="package.html">Package</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Popular Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="maintenance.html">Maintenance</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter and be the first to know about exciting wildlife safari packages, seasonal offers, and special discounts.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-3 mb-md-0">
+                       Copyright ©2026 WildLife Safari. All rights reserved. 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

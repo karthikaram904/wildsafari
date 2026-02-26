@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sighting Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Dashboard CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- Toggle Button (Mobile / Tab) -->
+<button class="sidebar-toggle" onclick="toggleSidebar()">
+  <i class="fa fa-bars"></i>
+</button>
+
+<div class="dashboard-container">
+
+  <!-- Sidebar -->
+  <aside class="dashboard-sidebar" id="sidebar">
+    <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/wildsafari-logo-white.png" alt="Icon">
+        </a>
+
+    <ul class="sidebar-menu">
+  <li>
+    <a href="dashboard.html">
+      <i class="fa fa-chart-line"></i> Dashboard
+    </a>
+  </li>
+
+  <li>
+    <a href="bookings.html">
+      <i class="fa fa-suitcase"></i> Bookings
+    </a>
+  </li>
+
+  <li  class="active">
+    <a href="sightings.html">
+      <i class="fa fa-paw"></i> Sightings
+    </a>
+  </li>
+
+  <li>
+    <a href="guides.html">
+      <i class="fa fa-user"></i> Guides
+    </a>
+  </li>
+
+  <li>
+    <a href="settings.html">
+      <i class="fa fa-gear"></i> Settings
+    </a>
+  </li>
+
+  <li>
+    <a href="logout.html">
+      <i class="fa fa-right-from-bracket"></i> Logout
+    </a>
+  </li>
+</ul>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+
+    
+    <h1>Recent Sightings</h1>
+    <div class="sightings-grid">
+        <div class="sighting-card">
+            <img src="https://via.placeholder.com/400x200" alt="Sighting 1">
+            <div class="content">
+                <h3>Bird Watching</h3>
+                <p>Spotted a rare species of bird near the lake. It had vibrant colors and a unique call. Perfect for photography enthusiasts!</p>
+            </div>
+        </div>
+        <div class="sighting-card">
+            <img src="https://via.placeholder.com/400x200" alt="Sighting 2">
+            <div class="content">
+                <h3>Wild Deer</h3>
+                <p>A group of deer grazing in the forest early morning. Observed their playful behavior and graceful movement. Truly a serene experience.</p>
+            </div>
+        </div>
+        <div class="sighting-card">
+            <img src="https://via.placeholder.com/400x200" alt="Sighting 3">
+            <div class="content">
+                <h3>Sunset View</h3>
+                <p>Captured the stunning sunset from the hilltop. The sky was painted with shades of orange and pink, creating a magical moment.</p>
+            </div>
+        </div>
+        <div class="sighting-card">
+            <img src="https://via.placeholder.com/400x200" alt="Sighting 4">
+            <div class="content">
+                <h3>River Otters</h3>
+                <p>Observed playful river otters near the banks. They were swimming and diving, making everyone around smile with joy.</p>
+            </div>
+        </div>
+        <div class="sighting-card">
+            <img src="https://via.placeholder.com/400x200" alt="Sighting 5">
+            <div class="content">
+                <h3>Mountain Trail Hike</h3>
+                <p>Hiked a new mountain trail and encountered beautiful wildflowers and butterflies along the way. The view from the top was breathtaking.</p>
+            </div>
+        </div>
+        <div class="sighting-card">
+            <img src="https://via.placeholder.com/400x200" alt="Sighting 6">
+            <div class="content">
+                <h3>Starry Night</h3>
+                <p>Spent the night under a clear sky full of stars. The Milky Way was visible, and shooting stars made it a memorable stargazing experience.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+  </main>
+</div>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
