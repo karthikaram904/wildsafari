@@ -1905,3 +1905,9 @@ html, body {
 .btn-social:hover{
     opacity:0.9;
 }
+
+.counter h1::after {
+  content: "+";
+  margin-left: 3px;
+  font-weight: 600;
+}
